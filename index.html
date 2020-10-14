@@ -83,7 +83,7 @@
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
-                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#acessar">Acessar sua Conta</button>
+                        <button type="button" class="btn btn-light mr-2" data-toggle="modal" data-target="#acessar">Acessar sua Conta</button>
                         <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal">
                             Sign In
                         </button>
@@ -209,21 +209,19 @@
                             <h5 class="card-title"><strong>TOTVS RS</strong> Sign In</h5>
                             <img id="iconTotvs" src="assets/images/icon.svg" alt="">
                             <form class="form-signin">
-                                <div class="input-group">
-                                    <span>
-                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="Email" />
+                                <div class="form-row text-left">
+                                    <div class="form-group col-md-12">
+                                        <label for="labelEmail">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                    </div>
                                 </div>
-        
-                                </br>
-        
-                                <div class="input-group">
-                                    <span>
-                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="Senha" />
-                                </div>       
+    
+                                <div class="form-row text-left">
+                                  <div class="form-group col-md-12">
+                                    <label for="labelPassword">Senha</label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Senha" required>
+                                  </div>
+                                </div>      
                                     
                                 <div class="custom-control custom-checkbox mb-3 text-right">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
