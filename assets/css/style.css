@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
 * { color: #333; }
 
 #logo path {
@@ -5,20 +7,20 @@
     fill: #ffffff;
 }
 
+.spotlight {
+  font-family: 'Capriola', sans-serif;
+  font-weight: bold;
+}
+
 .viewDetails {
     background-color: #ED9C2E !important;
     box-shadow:  3px 3px 5px 0 rgba(0,0,0,.4);
     border-radius: 80px;
-   
 }
 
 .people {
   box-shadow:  3px 3px 5px 0 rgba(0,0,0,.4);
   border-radius: 80px;
-}
-
-.acessar{
-  color: #fff;
 }
   
 .form-signin .btn {
@@ -36,9 +38,9 @@
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  }
+}
 
-  .span-or {
+.span-or {
   display: block;
   position: absolute;
   left: 50%;
@@ -47,13 +49,13 @@
   background-color: #fff;
   width: 50px;
   text-align: center;
-  }
+}
   
-  .hr-or {
+.hr-or {
   height: 1px;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  }
+}
 
 .fa-facebook-square,
 .fa-google {

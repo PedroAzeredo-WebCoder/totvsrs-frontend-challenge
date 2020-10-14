@@ -64,21 +64,19 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Equipe</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Serviços
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="dropdown-item" href="#">ERP</a>
+                            <a class="dropdown-item" href="#">ADEQUAÇÃO À LEGISLAÇÃO</a>
+                            <a class="dropdown-item" href="#">GESTÃO DE NEGÓCIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link" href="#">Contatos</a>
                         </li>
                     </ul>
 
@@ -123,31 +121,32 @@
 
         <section class="text-center mt-5">
             <div class="container marketing">
-                <h2>EQUIPE</h2>
+                <h2 class="spotlight">EQUIPE</h2>
                 <hr class="featurette-divider mb-5">
                 <div class="row">
                   <div class="col-lg-4">
                     <img class="rounded-circle people" src="assets/images/michele.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Anita Garibaldi</h2>
                     <p>Recrutadora de TI | Psicologa</p>
-                    <p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">Ver Detalhes »</a></p>
                   </div>
 
                   <div class="col-lg-4">
                     <img class="rounded-circle people" src="assets/images/jose.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>José Barcelos Garcia</h2>
                     <p>Gestão de Projetos</p>
-                    <p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">Ver Detalhes »</a></p>
                   </div>
 
                   <div class="col-lg-4">
                     <img class="rounded-circle people" src="assets/images/pedro.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Pedro Azeredo</h2>
                     <p>Developer Web</p>
-                    <p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">Ver Detalhes »</a></p>
                   </div>
                 </div>                          
               
+                <h2 class="mt-5 spotlight">SERVIÇOS</h2>
                 <hr class="featurette-divider">
 
                 <article>
@@ -157,6 +156,9 @@
                             <p class="lead">Você sabe o que é ERP? Enterprise Resource Planning é um sistema de gestão que permite acesso fácil,
                                 integrado e confiável aos dados de uma empresa. ...
                             </p>
+                            <div class="container text-right">
+                                <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Saiba Mais</button>
+                            </div>
                         </div>
                         <div class="col-md-5">
                             <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 500px;" src="assets/images/erp 1.png" data-holder-rendered="true">
@@ -171,7 +173,11 @@
                         <div class="col-md-7 order-md-2">
                             <h2 class="featurette-heading">ADEQUAÇÃO À LEGISLAÇÃO</br><span class="text-muted">Por que utilizar um termo de confidencialidade?</span></h2>
                             <p class="lead">Muitas empresas têm optado por adotar um termo de confidencialidade para proteger informações e processos
-                                sigilosos do negócio. Em muitos casos, essa confi...</p>
+                                sigilosos do negócio. Em muitos casos, essa confi...
+                            </p>
+                            <div class="container text-left">
+                                <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Saiba Mais</button>
+                            </div>
                         </div>
                         <div class="col-md-5 order-md-1">
                             <img class="featurette-image img-fluid mx-auto"  src="assets/images/termo-de-confidencialidade 1.png" data-holder-rendered="true" style="width: 500px; height: 500px;">
@@ -186,7 +192,11 @@
                         <div class="col-md-7">
                             <h2 class="featurette-heading">GESTÃO DE NEGÓCIOS</br><span class="text-muted">PESQUISA DE CLIMA ORGANIZACIONAL: POR QUE FAZER?</span></h2>
                             <p class="lead">A pesquisa de clima organizacional é aplicada nas empresas com o objetivo de mapear diferentes aspectos do
-                                ponto de vista dos colaboradores. Geralmente, é re...</p>
+                                ponto de vista dos colaboradores. Geralmente, é re...
+                            </p>
+                            <div class="container text-right">
+                                <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Saiba Mais</button>
+                            </div>
                         </div>
                         <div class="col-md-5">
                             <img class="featurette-image img-fluid mx-auto" src="assets/images/pesquisa-de-clima-organizacional 1.png" data-holder-rendered="true" style="width: 500px; height: 500px;">
@@ -291,13 +301,13 @@
                             </div>
 
                             <div class="form-group">    
-                              <label for="inputAddress">CEP</label>
+                              <label for="labelAddress">CEP</label>
                               <input type="text" class="form-control" id="inputAddress" placeholder="99.000-001">
                             </div>
 
                             <div class="form-group">
-                              <label for="inputAddress2">Telefone</label>
-                              <input type="text" class="form-control" id="inputAddress2" placeholder="(00) 99999-0000">
+                              <label for="labelPhone">Telefone</label>
+                              <input type="text" class="form-control" id="inputPhone" placeholder="(00) 99999-0000">
                             </div>
 
                             <div class="form-group text-center">
@@ -317,8 +327,8 @@
 
                             <div class="form-row">
                                 <div class="form-group col-md-3" required>
-                                    <label for="inputState">Dia</label>
-                                    <select id="inputState" class="form-control">
+                                    <label for="labelDay">Dia</label>
+                                    <select id="inputDay" class="form-control">
                                         <option selected>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -354,8 +364,8 @@
                                 </div>
 
                                 <div class="form-group col-md-6" required>
-                                    <label for="inputState">Mês</label>
-                                    <select id="inputState" class="form-control">
+                                    <label for="labelMounth">Mês</label>
+                                    <select id="inputMounth" class="form-control">
                                     <option selected>Janeiro</option>
                                     <option>Fevereiro</option>
                                     <option>Março</option>
@@ -372,8 +382,8 @@
                                 </div>
 
                                 <div class="form-group col-md-3" required>
-                                    <label for="inputState">Ano</label>
-                                    <select id="inputState" class="form-control">
+                                    <label for="labelYear">Ano</label>
+                                    <select id="inputYear" class="form-control">
                                     <option value="2020">2020</option>
                                     <option value="2019">2019</option>
                                     <option value="2018">2018</option>
@@ -469,7 +479,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Cadastre-se</button>
                         </form>
                     </div>
                 </div>
@@ -477,6 +487,7 @@
         </div> 
 
         <!-- Rodape -->
+        <h2 class="text-center spotlight">CONTATOS</h2>
         <footer class="page-footer font-small special-color-dark pt-4">
             <div class="container">    
                 <ul class="list-unstyled list-inline text-center">
@@ -522,6 +533,8 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
             <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="assets/js/mask.js"></script>
+            <script src="assets/js/jquery.mask.min.js"></script>
         </footer>
         
     </body>
