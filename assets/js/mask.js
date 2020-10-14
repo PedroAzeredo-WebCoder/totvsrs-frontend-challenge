@@ -8,13 +8,4 @@ $(document).ready(function() {
         
     });
 
-    $("#mac").mask("SS-SS-SS-SS-SS-SS", {
-        translation: {
-            'S': {
-                pattern: /^[A-Za-z0-9]/
-            }
-        },
-        reverse: true
-    })
-    $("#ip").mask("00.00.00.999")
 });

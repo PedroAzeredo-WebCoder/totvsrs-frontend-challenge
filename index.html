@@ -81,7 +81,7 @@
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
-                        <button type="button" class="btn btn-light mr-2" data-toggle="modal" data-target="#acessar"><strong>Acessar sua Conta</strong></button>
+                        <button type="button" class="btn btn-light mr-2" data-toggle="modal" data-target="#acessar"><strong>Criar sua conta</strong></button>
                         <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal">
                             Sign In
                         </button>
@@ -204,7 +204,7 @@
                     </div>
                 </article>
         
-                <hr class="featurette-divider"> 
+                
         
             </div>
         </section>
@@ -277,25 +277,26 @@
                         </button>
                       </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="form1" name="form1" method="post" action="#" onsubmit="return valida_form(this)">
+                            <p class="mb-3">* Obrigatório</p>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="labelName">Nome</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Nome" required>
+                                    <label for="labelName">Nome *</label>
+                                    <input type="text" class="form-control valida" id="inputName" placeholder="Nome" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="labelLastName">Sobrenome</label>
+                                    <label for="labelLastName">Sobrenome *</label>
                                     <input type="text" class="form-control" id="inputLastName" placeholder="Sobrenome" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
                               <div class="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
+                                <label for="inputEmail4">Email *</label>
                                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
                               </div>
                               <div class="form-group col-md-6">
-                                <label for="inputPassword4">Senha</label>
+                                <label for="inputPassword4">Senha *</label>
                                 <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
                               </div>
                             </div>
@@ -311,13 +312,14 @@
                             </div>
 
                             <div class="form-group text-center">
-                                <div class="form-check form-check-inline radio" required>
-                                    <label class="form-check-label" for="inlineRadio1">Feminino</label>
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Feminino">
-                                </div>
+                                <label class="text-left" for="labelGenre">Gênero *</label></br>
                                 <div class="form-check form-check-inline radio">
                                     <label class="form-check-label" for="inlineRadio2">Masculino</label>
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Masculino">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Masculino" checked>
+                                </div>
+                                <div class="form-check form-check-inline radio">
+                                    <label class="form-check-label" for="inlineRadio1">Feminino</label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Feminino">
                                 </div>
                                 <div class="form-check form-check-inline radio">
                                     <label class="form-check-label" for="inlineRadio3">Personalizado</label>
@@ -327,7 +329,7 @@
 
                             <div class="form-row">
                                 <div class="form-group col-md-3" required>
-                                    <label for="labelDay">Dia</label>
+                                    <label for="labelDay">Dia *</label>
                                     <select id="inputDay" class="form-control">
                                         <option selected>01</option>
                                         <option>02</option>
@@ -364,7 +366,7 @@
                                 </div>
 
                                 <div class="form-group col-md-6" required>
-                                    <label for="labelMounth">Mês</label>
+                                    <label for="labelMounth">Mês *</label>
                                     <select id="inputMounth" class="form-control">
                                     <option selected>Janeiro</option>
                                     <option>Fevereiro</option>
@@ -382,7 +384,7 @@
                                 </div>
 
                                 <div class="form-group col-md-3" required>
-                                    <label for="labelYear">Ano</label>
+                                    <label for="labelYear">Ano *</label>
                                     <select id="inputYear" class="form-control">
                                     <option value="2020">2020</option>
                                     <option value="2019">2019</option>
@@ -478,17 +480,28 @@
                                     </select>
                                 </div>
                             </div>
-
-                            <button type="submit" class="btn btn-success btn-lg btn-block">Cadastre-se</button>
+                            
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-11">
+                                        <button type="submit" class="btn btn-success btn-lg btn-block">Cadastre-se</button>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="reset" class="btn btn-primary btn-sm"><img src="assets/images/img_284574 1.svg" width="36px" alt=""></button>
+                                    </div>
+                                </div>                   
+                            </div>                                                       
                         </form>
                     </div>
                 </div>
             </div>
-        </div> 
+        
+        </div>      
 
         <!-- Rodape -->
-        <h2 class="text-center spotlight">CONTATOS</h2>
-        <footer class="page-footer font-small special-color-dark pt-4">
+        <footer class="page-footer">
+            <hr class="featurette-divider"> 
+            <h6 class="text-center spotlight mx-3">CONTATOS</h6>
             <div class="container">    
                 <ul class="list-unstyled list-inline text-center">
                     <li class="list-inline-item">
@@ -535,6 +548,7 @@
             <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
             <script src="assets/js/mask.js"></script>
             <script src="assets/js/jquery.mask.min.js"></script>
+            <script src="assets/js/validation.js"></script>
         </footer>
         
     </body>
