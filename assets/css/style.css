@@ -1,110 +1,95 @@
 * { color: #333; }
-#logo path{
+
+#logo path {
     width: 260px;
     fill: #ffffff;
 }
 
-.viewDetails{
+.viewDetails {
     background-color: #ED9C2E !important;
     box-shadow:  3px 3px 5px 0 rgba(0,0,0,.4);
     border-radius: 80px;
     
 }
 
-.people{
+.people {
   box-shadow:  3px 3px 5px 0 rgba(0,0,0,.4);
   border-radius: 80px;
 }
 
-  .loginBackgrond {
-    background-image: url(../images/backgroundLogin\ 1.png);
-    background-size:100% 100%;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    margin: auto;
+.loginBackgrond {
+  background-image: url(../images/backgroundLogin\ 1.png);
+  background-size:100% 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+  
+.form-signin .btn {
+  font-size: 80%;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.login-or {
+  position: relative;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+  .span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
   }
   
-  .card-title {
-    font-weight: 500;
-    font-size: 1.5rem;
+  .hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
   }
-    
-  .form-signin .btn {
-    font-size: 80%;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding: 1rem;
-    transition: all 0.2s;
-  }
-  .login-or {
-    position: relative;
-    color: #aaa;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    }
-    .span-or {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: -2px;
-    margin-left: -25px;
-    background-color: #fff;
-    width: 50px;
-    text-align: center;
-    }
-    .hr-or {
-    height: 1px;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    }
 
-.fa-facebook-square{
+.fa-facebook-square,
+.fa-google {
   color: white;
   width: 20px;
+  margin-right: 3px;
 }
 
-.btn-facebook {
-  
+.radio {
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    border-radius: .25rem;;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1 0 auto;
+    font-weight: normal;
+    height: 36px;
+    margin: 8px 6px 6px;
+    padding: 20px;
+    position: relative;
+    width: auto;
 }
 
-.btn-face i {
-  font-size: 30px;
-  margin-right: 17px;
-  padding-bottom: 3px;
-}
-
-.btn-google {
-  color: #555555;
-  background-color: #fff;
-}
-
-.btn-google img {
-  width: 30px;
-  margin-right: 15px;
-  padding-bottom: 3px;
-}
-
-.btn-face:hover:before,
-.btn-google:hover:before {
-  opacity: 1;
-}
-
-.btn-face:hover,
-.btn-google:hover {
-  color: #fff;
-}
-
-  #iconTotvs {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 5%;
-    border-radius:50%;
-    box-shadow: 5px 3px 4px rgba(15, 15, 15, 0.3);
-    -webkit-animation:spin 4s linear;
-    -moz-animation:spin 4s linear;
-    animation:spin 4s linear;
+#iconTotvs {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 5%;
+  border-radius:50%;
+  box-shadow: 5px 3px 4px rgba(15, 15, 15, 0.3);
+  -webkit-animation:spin 4s linear;
+  -moz-animation:spin 4s linear;
+  animation:spin 4s linear;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
