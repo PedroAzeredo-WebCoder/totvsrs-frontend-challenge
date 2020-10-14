@@ -9,7 +9,7 @@
     background-color: #ED9C2E !important;
     box-shadow:  3px 3px 5px 0 rgba(0,0,0,.4);
     border-radius: 80px;
-    
+   
 }
 
 .people {
@@ -17,12 +17,8 @@
   border-radius: 80px;
 }
 
-.loginBackgrond {
-  background-image: url(../images/backgroundLogin\ 1.png);
-  background-size:100% 100%;
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  margin: auto;
+.acessar{
+  color: #fff;
 }
   
 .form-signin .btn {
