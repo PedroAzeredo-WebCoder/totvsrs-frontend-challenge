@@ -1,4 +1,5 @@
-function valida_form (){
+function enviardados(){
+    
     if(document.getElementById("inputName").value.length < 3){
         inputName.classList.remove('valida'),
         inputName.classList.add('is-invalid');
