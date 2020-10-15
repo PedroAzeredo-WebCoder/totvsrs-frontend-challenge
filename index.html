@@ -14,8 +14,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	</head>
 	<body>
-        
-
+        <!--Menu-->
 		<aside>
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 				<a class="navbar-brand" href="">
@@ -62,10 +61,10 @@
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Equipe</a>
+						<a class="nav-link" href="#equipe">Equipe</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#servicos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Serviços
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -74,7 +73,7 @@
 							<a class="dropdown-item" href="#">GESTÃO DE NEGÓCIOS</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link" href="#">Contatos</a>
+					<a class="nav-link" href="#contatos">Contatos</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
@@ -116,7 +115,7 @@
 		</section>
 		<section class="text-center mt-5">
 			<div class="container marketing">
-				<h2 class="spotlight">EQUIPE</h2>
+				<h2 class="spotlight" id="equipe">EQUIPE</h2>
 				<hr class="featurette-divider mb-5">
 				<div class="row">
 					<div class="col-lg-4">
@@ -138,7 +137,7 @@
 						<p><a class="btn btn-secondary rounded-pill viewDetails" href="#" role="button">Ver Detalhes »</a></p>
 					</div>
 				</div>
-				<h2 class="mt-5 spotlight">SERVIÇOS</h2>
+				<h2 class="mt-5 spotlight" id="servicos">SERVIÇOS</h2>
 				<hr class="featurette-divider">
 				<article>
 					<div class="row featurette">
@@ -192,7 +191,60 @@
 				</article>
 			</div>
 		</section>
-		<!-- Modal Sign In -->
+		
+		<!-- Rodape -->
+		<footer class="page-footer">
+			<hr class="featurette-divider">
+			<h6 class="text-center spotlight mx-3" id="contatos">CONTATOS</h6>
+			<div class="container">
+				<ul class="list-unstyled list-inline text-center">
+					<li class="list-inline-item">
+						<a href="https://bit.ly/3nR1ixl" target="_blank" class="btn-floating btn-fb mx-1">
+						<i class="fab fa-github" title="github"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://bit.ly/2SSEvD6" target="_blank" class="btn-floating btn-fb mx-1">
+						<i class="fab fa-" title="Instagram"><strong></strong></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://bit.ly/2SSEvD6" target="_blank" class="btn-floating btn-fb mx-1">
+						<a  class="btn-floating btn-tw mx-1">
+						<i class="fab fa-" title="Whatsapp"><strong></strong></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://bit.ly/3lFOurO" target="_blank" class="btn-floating btn-gplus mx-1">
+						<i class="fab fa-google-plus-g" title="Gmail"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://bit.ly/33Sq1tl" target="_blank" class="btn-floating btn-li mx-1">
+						<i class="fab fa-linkedin-in" title="Linkedin"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="tel:51994442101" target="_blank" class="btn-floating btn-li mx-1">
+						<i class="fas fa-phone-alt" title="Celular"></i>
+						</a>
+					</li>
+				</ul>
+				<div class="footer-copyright text-center py-3">© 2020 Copyright:
+					<a href="https://bit.ly/3gpRkiq" target="_blank"> Pedro Azeredo</a>
+				</div>
+			</div>
+			<script src="vendor/components/jquery/jquery.min.js"></script>
+			<script src="vendor/components/jquery/jquery.mask.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+			<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script src="assets/js/mask.js"></script>
+			<script src="assets/js/validation.js"></script>
+            <script src="assets/js/modalButtons.js"></script>
+            <script src="assets/js/sweetAlert.min.js"></script>
+            <script src="assets/js/sweetAlert.js"></script>
+        </footer>
+        <!-- Modal Sign In -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -459,11 +511,11 @@
 							</div>
 							<div class="container text-center">
 								<div class="row">
-									<div class="col-10">
+									<div class="col-11">
 										<button type="submit" class="btn btn-success btn-lg btn-block">Cadastre-se</button>
 									</div>
-									<div class="col-2">
-										<button type="reset" class="btn btn-info btn-lg">Limpar</button>
+									<div class="col-1">
+										<button type="reset" class="btn btn-info btn-lg"><i class="fas fa-undo-alt text-white"></i></button>
 									</div>
 								</div>
 							</div>
@@ -472,57 +524,5 @@
 				</div>
 			</div>
 		</div>
-		<!-- Rodape -->
-		<footer class="page-footer">
-			<hr class="featurette-divider">
-			<h6 class="text-center spotlight mx-3">CONTATOS</h6>
-			<div class="container">
-				<ul class="list-unstyled list-inline text-center">
-					<li class="list-inline-item">
-						<a href="https://bit.ly/3nR1ixl" target="_blank" class="btn-floating btn-fb mx-1">
-						<i class="fab fa-github" title="github"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="https://bit.ly/2SSEvD6" target="_blank" class="btn-floating btn-fb mx-1">
-						<i class="fab fa-" title="Instagram"><strong></strong></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="https://bit.ly/2SSEvD6" target="_blank" class="btn-floating btn-fb mx-1">
-						<a  class="btn-floating btn-tw mx-1">
-						<i class="fab fa-" title="Whatsapp"><strong></strong></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="https://bit.ly/3lFOurO" target="_blank" class="btn-floating btn-gplus mx-1">
-						<i class="fab fa-google-plus-g" title="Gmail"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="https://bit.ly/33Sq1tl" target="_blank" class="btn-floating btn-li mx-1">
-						<i class="fab fa-linkedin-in" title="Linkedin"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="tel:51994442101" target="_blank" class="btn-floating btn-li mx-1">
-						<i class="fas fa-phone-alt" title="Celular"></i>
-						</a>
-					</li>
-				</ul>
-				<div class="footer-copyright text-center py-3">© 2020 Copyright:
-					<a href="https://bit.ly/3gpRkiq" target="_blank"> Pedro Azeredo</a>
-				</div>
-			</div>
-			<script src="vendor/components/jquery/jquery.min.js"></script>
-			<script src="vendor/components/jquery/jquery.mask.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
-			<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-			<script src="assets/js/mask.js"></script>
-			<script src="assets/js/validation.js"></script>
-            <script src="assets/js/modalButtons.js"></script>
-            <script src="assets/js/sweetAlert.min.js"></script>
-            <script src="assets/js/sweetAlert.js"></script>
-		</footer>
 	</body>
 </html>

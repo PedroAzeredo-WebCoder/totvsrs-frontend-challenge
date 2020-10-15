@@ -33,3 +33,21 @@ function deleteFunction(){
         }
       })
 }
+
+function saved(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Seu cadastro foi salvo',
+        showConfirmButton: false,
+        timer: 1500
+      })
+}
+
+function error(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Algo deu errado, Tente novamente!'
+    })
+}
