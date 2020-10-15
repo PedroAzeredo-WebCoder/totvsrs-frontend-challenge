@@ -41,4 +41,27 @@ function enviardados(){
         inputPhone.classList.add('is-valid');
     } 
 }
-    
+
+function username(){
+    var inputEmail = document.getElementById('inputEmail');  var inputEmail = document.getElementById('inputEmail');
+    var userName =document.getElementById('userName')
+
+    if(inputEmail != ''){
+        userName.innerHTML = inputEmail;
+    }
+}
+
+function signIn(){
+    var inputEmail = document.getElementById('inputEmail');
+    var inputPassword = document.getElementById('inputPassword');
+
+    if(inputEmail && inputPassword != ''){
+        window.location.href = "../../admin.html";
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Algo deu errado, Tente novamente!'
+        })
+    }
+}
