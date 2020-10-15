@@ -53,35 +53,37 @@
 					</svg>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#equipe">Equipe</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#servicos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Serviços
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">ERP</a>
-							<a class="dropdown-item" href="#">ADEQUAÇÃO À LEGISLAÇÃO</a>
-							<a class="dropdown-item" href="#">GESTÃO DE NEGÓCIOS</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#contatos">Contatos</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-				<button type="button" class="btn btn-light mr-2" data-toggle="modal" data-target="#acessar"><strong>Criar sua conta</strong></button>
-				<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal">
-				Sign In
-				</button>
-				</form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#servicos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">ERP</a>
+                                <a class="dropdown-item" href="#">ADEQUAÇÃO À LEGISLAÇÃO</a>
+                                <a class="dropdown-item" href="#">GESTÃO DE NEGÓCIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatos">Contatos</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <button type="button" class="btn btn-light mr-2" data-toggle="modal" data-target="#acessar">
+                            <strong>Criar sua conta</strong>
+                        </button>
+                        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal">
+                            Sign In
+                        </button>
+                    </form>
 				</div>
 			</nav>
 		</aside>
@@ -200,18 +202,18 @@
 				<ul class="list-unstyled list-inline text-center">
 					<li class="list-inline-item">
 						<a href="https://bit.ly/3nR1ixl" target="_blank" class="btn-floating btn-fb mx-1">
-						<i class="fab fa-github" title="github"></i>
+						    <i class="fab fa-github" title="github"></i>
 						</a>
 					</li>
 					<li class="list-inline-item">
 						<a href="https://bit.ly/2SSEvD6" target="_blank" class="btn-floating btn-fb mx-1">
-						<i class="fab fa-" title="Instagram"><strong></strong></i>
+						    <i class="fab fa-" title="Instagram"><strong></strong></i>
 						</a>
 					</li>
 					<li class="list-inline-item">
 						<a href="https://bit.ly/2SSEvD6" target="_blank" class="btn-floating btn-fb mx-1">
 						<a  class="btn-floating btn-tw mx-1">
-						<i class="fab fa-" title="Whatsapp"><strong></strong></i>
+						    <i class="fab fa-" title="Whatsapp"><strong></strong></i>
 						</a>
 					</li>
 					<li class="list-inline-item">
@@ -265,7 +267,7 @@
 								<div class="form-row text-left">
 									<div class="form-group col-md-12">
 										<label for="labelPassword">Senha</label>
-										<input type="password" class="form-control" id="inputPassword" placeholder="Senha" required>
+										<input type="password" class="form-control" id="inputPassword" minlength="8" maxlength="25" placeholder="Senha" required>
 									</div>
 								</div>
 								<div class="custom-control custom-checkbox mb-3 text-right">
@@ -332,12 +334,12 @@
 								</div>
 								<div class="form-group col-md-6">
 									<label for="inputPassword4">Senha *</label>
-									<input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+									<input type="password" class="form-control" id="inputPassword4" minlength="8" maxlength="25" placeholder="Password" required>
 								</div>
 							</div>
 							<div class="form-group">    
 								<label for="labelAddress">CEP</label>
-								<input type="text" class="form-control" id="inputAddress" placeholder="99.000-001">
+								<input type="text" class="form-control" id="inputAddress" minlength="8" maxlength="10" placeholder="99.000-001">
 							</div>
 							<div class="form-group">
 								<label for="labelPhone">Telefone</label>
