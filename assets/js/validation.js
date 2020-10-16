@@ -1,50 +1,65 @@
 function enviardados(){
     
-    if(document.getElementById("inputName").value.length < 3){
-        inputName.classList.remove('valida'),
-        inputName.classList.add('is-invalid');
+    var name = $("#inputName").val().length;
+    var lastName = $("#inputLastName").val().length;
+    var email = $("#inputEmail").val().length;
+    var password = $("#inputPassword").val().length;
+    var address = $("#inputAddress").val().length;
+    var phone = $("#inputPhone").val().length;
+    
+    if(name < 3){
+        name.classList.remove('valida'),
+        name.classList.add('is-invalid');
     }else{
-        inputName.classList.remove('valida'),
-        inputName.classList.add('is-valid');
+        name.classList.remove('valida'),
+        name.classList.add('is-valid');
     } 
 
-    if(document.getElementById("inputLastName").value.length < 3){
-        inputLastName.classList.remove('valida'),
-        inputLastName.classList.add('is-invalid');
+    if(lastName < 3){
+        lastName.classList.remove('valida'),
+        lastName.classList.add('is-invalid');
     }else{
-        inputLastName.classList.remove('valida'),
-        inputLastName.classList.add('is-valid');
+        lastName.classList.remove('valida'),
+        lastName.classList.add('is-valid');
     } 
 
-    if(document.getElementById("inputPassword4").value.length < 8){
-        inputPassword4.classList.remove('valida'),
-        inputPassword4.classList.add('is-invalid'),
-        alert("A sua senha deve ter no mìnimo 8 digitos!");
+    if(email < 8){
+        email.classList.remove('valida'),
+        email.classList.add('is-invalid');
     }else{
-        inputPassword4.classList.remove('valida'),
-        inputPassword4.classList.add('is-valid');
+        email.classList.remove('valida'),
+        email.classList.add('is-valid');
     } 
     
-    if(document.getElementById("inputAddress").value.length < 10){
-        inputAddress.classList.remove('valida'),
-        inputAddress.classList.add('is-invalid');
+    if(password < 8){
+        password.classList.remove('valida'),
+        password.classList.add('is-invalid'),
+        alert("A sua senha deve ter no mìnimo 8 digitos!");
     }else{
-        inputAddress.classList.remove('valida'),
-        inputAddress.classList.add('is-valid');
+        password.classList.remove('valida'),
+        password.classList.add('is-valid');
     } 
 
-    if(document.getElementById("inputPhone").value.length < 15){
-        inputPhone.classList.remove('valida'),
-        inputPhone.classList.add('is-invalid');
+    if(address < 10){
+        address.classList.remove('valida'),
+        address.classList.add('is-invalid');
     }else{
-        inputPhone.classList.remove('valida'),
-        inputPhone.classList.add('is-valid');
+        address.classList.remove('valida'),
+        address.classList.add('is-valid');
+    } 
+
+    if(phone < 15){
+        phone.classList.remove('valida'),
+        phone.classList.add('is-invalid');
+    }else{
+        phone.classList.remove('valida'),
+        phone.classList.add('is-valid');
     } 
 }
 
 function username(){
-    var inputEmail = document.getElementById('inputEmail');  var inputEmail = document.getElementById('inputEmail');
-    var userName =document.getElementById('userName')
+    var inputEmail = document.getElementById('inputEmail');  
+    var userName =document.getElementById('userName');
 
     if(inputEmail != ''){
         userName.innerHTML = inputEmail;

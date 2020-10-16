@@ -51,3 +51,8 @@ function error(){
         text: 'Algo deu errado, Tente novamente!'
     })
 }
+
+function cadastro(){
+  $('#exampleModal').modal('hide'),
+  $('#acessar').modal('show');
+}
