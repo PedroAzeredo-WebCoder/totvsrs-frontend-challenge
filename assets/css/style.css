@@ -45,6 +45,10 @@
   padding-bottom: 10px;
 }
 
+.nav-item .titleNav{
+  color: #ffffff;
+}
+
 .span-or {
   display: block;
   position: absolute;
