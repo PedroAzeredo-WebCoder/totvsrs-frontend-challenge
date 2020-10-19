@@ -380,7 +380,8 @@
 								<div class="form-row">
 									<div class="form-group col-md-3">
 										<label for="inputDay">Dia *</label>
-										<select id="inputDay" class="form-control">
+										<input list="inputDays" name="browser" class="form-control" id="inputDay">
+										<datalist id="inputDays">
 											<option selected>01</option>
 											<option>02</option>
 											<option>03</option>
@@ -412,11 +413,12 @@
 											<option>29</option>
 											<option>30</option>
 											<option>31</option>
-										</select>
+										</datalist>
 									</div>
 									<div class="form-group col-md-6">
 										<label for="inputMounth">Mês *</label>
-										<select id="inputMounth" class="form-control">
+										<input list="inputMounths" name="browser" class="form-control" id="inputMounth">
+										<datalist id="inputMounths">
 											<option selected>Janeiro</option>
 											<option>Fevereiro</option>
 											<option>Março</option>
@@ -429,11 +431,12 @@
 											<option>Outubro</option>
 											<option>Novembro</option>
 											<option>Dezembro</option>
-										</select>
+										</datalist>
 									</div>
 									<div class="form-group col-md-3">
 										<label for="inputYear">Ano *</label>
-										<select id="inputYear" class="form-control">
+										<input list="inputYears" name="browser" class="form-control" id="inputYear">
+										<datalist id="inputYears">
 											<option value="2020">2020</option>
 											<option value="2019">2019</option>
 											<option value="2018">2018</option>
